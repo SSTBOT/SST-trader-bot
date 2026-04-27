@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SST TRADER v21 ULTIMATE FINAL (1777230342) FINAL — STABLE REBUILD"""
+"""v21 ULTIMATE FINAL v2"""
 import os, logging, requests, random, asyncio, threading, time, json as json_module
 from datetime import datetime, timedelta
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, Bot
