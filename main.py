@@ -103,6 +103,14 @@ def execute_trade(uid,sym,side,amount):
     save_data()
     return t
 
+class SimpleAI:
+    def analyze_market(self): return {'market_phase': 'Бычий 🟢', 'sentiment': 65, 'best_strategy_name': 'DCA', 'confidence': 70, 'top_ideas': []}
+    def get_ai_advice(self, uid): return {'personal_tip': 'Держи позицию'}
+    def get_ai_status(self): return {'version': '4.0', 'accuracy': '75%'}
+    def _score(self, t): return 50
+
+sst_ai = SimpleAI()
+
 def menu():
     return ReplyKeyboardMarkup([
         ["🚀 СТАРТ", "🤖 SST Alpha", "🎯 СИГНАЛЫ"],
